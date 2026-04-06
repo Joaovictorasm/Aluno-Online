@@ -27,7 +27,7 @@ O projeto adota o padrão **MVC (Model-View-Controller)** para garantir modulari
 * `repositories/`: Interface de comunicação direta com a camada de persistência.
 * `AlunoOnlineApplication.java`: Classe principal que inicializa o contexto do Spring Boot.
 
-## 🛠️ Visão Geral da Implementação
+## 👁️ Visão Geral da Implementação
 
 A aplicação utiliza as melhores práticas do ecossistema Java para oferecer uma API robusta e escalável.
 
