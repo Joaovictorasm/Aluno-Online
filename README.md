@@ -7,7 +7,7 @@ Solução de backend voltada para a administração escolar, permitindo o contro
 A API disponibiliza operações completas de **CRUD** para a gestão de duas entidades fundamentais:
 
 * **Estudantes:** Gestão integral de matrículas, perfis, atualizações cadastrais e exclusões.
-* **Docentes:** Registro e manutenção de dados relativos aos professores da instituição.
+* **Professores:** Registro e manutenção de dados relativos aos professores da instituição.
 
 ## Stack Tecnológica
 
