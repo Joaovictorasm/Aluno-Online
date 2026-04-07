@@ -21,7 +21,7 @@ public class AlunoService {
         alunoRepository.save(aluno);
     }
 
-    // READ — listar todos
+    
     public List<Aluno> listarTodosAlunos() {
         return alunoRepository.findAll();
     }
