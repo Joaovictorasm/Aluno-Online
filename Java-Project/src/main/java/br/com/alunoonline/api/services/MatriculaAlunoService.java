@@ -79,19 +79,19 @@ public class MatriculaAlunoService {
         if (!matriculasDoAluno.isEmpty()) {
             HistoricoAlunoDto historico = new HistoricoAlunoDto();
 
-            historico.equals(matriculasDoAluno.get(0).getAluno().getName());
-            historico.equals(matriculasDoAluno.get(0).getAluno().getCourse());
+            historico.setNomeAluno(matriculasDoAluno.get(0).getAluno().getNome());
+            historico.setEmailAluno(matriculasDoAluno.get(0).getAluno().getEmail());
             List<DisciplinasAlunoDto> disciplinasList = new ArrayList<>();
 
             for (MatriculaAluno matricula: matriculasDoAluno) {
                 DisciplinasAlunoDto disciplinasAlunoDto = new DisciplinasAlunoDto();
 
                 disciplinasAlunoDto.setNomeDisciplina(matricula.getDisciplina().getName());
-                disciplinasAlunoDto.setProfessorDisciplina(matricula.getDisciplina().getProfessor().getName());
+                disciplinasAlunoDto.setProfessorDisciplina(matricula.getDisciplina().getProfessor().getNome());
                 disciplinasAlunoDto.setNota1(matricula.getNota1());
                 disciplinasAlunoDto.setNota2(matricula.getNota2());
                 if ((matricula.getNota1() != null && matricula.getNota2() != null)) {
-                    disciplinasAlunoDto.setMedia(matricula.getNota1() + matricula.getNota2() / 2);
+                    disciplinasAlunoDto.setMedia((matricula.getNota1() + matricula.getNota2()) / 2);
                 } else {
                     disciplinasAlunoDto.setMedia(null);
                 }
